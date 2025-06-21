@@ -295,7 +295,7 @@ with col1:
             <li><strong>Ringkasan</strong> dataset</li>
             <li><strong>Visualisasi</strong> Statistik dan WordCloud</li>
             <li><strong>Pratinjau</strong> ulasan sentimen</li>
-            <li><strong>Ekspor</strong> hasil analisis ke file pilihan (csv, excel, json)</li>
+            <li><strong>Ekspor</strong> hasil analisis ke file pilihan (csv dan json)</li>
         </ul>
     </div>
     """, unsafe_allow_html=True)
@@ -310,7 +310,7 @@ with col2:
             <li><strong>Pilih</strong> Metode Analisis, Opsi Analisis dan Opsi Ekspor</li>
             <li><strong>Upload</strong> file dataset dalam format CSV yang memiliki kolom: 'Review Text' dan 'Rating'</li>
             <li><strong>Lihat</strong> hasil sentimen dan visualisasi</li>
-            <li><strong>Ekspor</strong> dataset ke file pilihan (csv, excel, json)</li>
+            <li><strong>Ekspor</strong> dataset ke file pilihan (csv dan json)</li>
         </ul>
     </div>
     """, unsafe_allow_html=True)
@@ -338,7 +338,7 @@ with st.sidebar:
     
     # Export options
     st.markdown("### 📥 Opsi Ekspor")
-    export_format = st.selectbox("Format Ekspor:", ["CSV", "Excel", "JSON"])
+    export_format = st.selectbox("Format Ekspor:", ["CSV", "JSON"])
     
     st.markdown("---")
     st.markdown("""
@@ -634,9 +634,6 @@ if uploaded_file is not None:
                     file_name=f'sentiment_analysis_{metode.replace(" ", "_")}_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv',
                     mime='text/csv'
                 )
-            elif export_format == "Excel":
-                # Note: This would require openpyxl or xlsxwriter
-                st.info("Excel export requires additional dependencies. CSV export is recommended.")
             elif export_format == "JSON":
                 json_data = export_df.to_json(orient='records', indent=2)
                 st.download_button(
