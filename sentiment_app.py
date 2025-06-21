@@ -380,8 +380,14 @@ with col2:
     <div style='background-color: white; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); color: #333;'>
         <strong>Kolom yang Diperlukan:</strong><br>
         <ul style='margin-top: 5px;'>
-            <li><span style='background-color: #f5f5f5; padding: 2px 6px; border-radius: 4px; color: #d63384; font-family: monospace;'>Review Text</span> : Ulasan pengguna</li>
-            <li><span style='background-color: #f5f5f5; padding: 2px 6px; border-radius: 4px; color: #d63384; font-family: monospace;'>Rating</span> : Peringkat Numerik</li>
+        <li>
+            <span style="background-color: #f5f5f5; padding: 2px 6px; border-radius: 4px; color: #d63384; font-family: monospace;">Review Text</span>
+            <span style="color: #000000;">: Ulasan pengguna</span>
+        </li>
+        <li>
+            <span style="background-color: #f5f5f5; padding: 2px 6px; border-radius: 4px; color: #d63384; font-family: monospace;">Rating</span>
+            <span style="color: #000000;">: Peringkat Numerik</span>
+        </li>
         </ul>
         <div style='margin-top: 10px; background-color: #1e1e1e; color: #f8f8f2; padding: 10px; border-radius: 5px; font-family: monospace; font-size: 14px;'>
             • CSV files only<br>
