@@ -377,17 +377,13 @@ with col1:
 
 with col2:
     st.markdown("""
-    <div style='background-color: white; padding: 1rem; border-radius: 10px;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.1); color: #333; font-size: 0.9rem;'>
-        <strong>Kolom yang Diperlukan:</strong><br><br>
-        <ul>
-            <li><span style='background-color:#f5f5f5; padding:2px 6px; border-radius:4px;
-                color:#d63384; font-family:monospace;'>Review Text</span> : Ulasan pengguna</li>
-            <li><span style='background-color:#f5f5f5; padding:2px 6px; border-radius:4px;
-                color:#d63384; font-family:monospace;'>Rating</span> : Peringkat Numerik</li>
+    <div style='background-color: white; padding: 1rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); color: #333;'>
+        <strong>Kolom yang Diperlukan:</strong><br>
+        <ul style='margin-top: 5px;'>
+            <li><span style='background-color: #f5f5f5; padding: 2px 6px; border-radius: 4px; color: #d63384; font-family: monospace;'>Review Text</span> : Ulasan pengguna</li>
+            <li><span style='background-color: #f5f5f5; padding: 2px 6px; border-radius: 4px; color: #d63384; font-family: monospace;'>Rating</span> : Peringkat Numerik</li>
         </ul>
-        <div style='margin-top:10px; background-color:#1e1e1e; color:#f8f8f2;
-            padding:10px; border-radius:5px; font-family:monospace; font-size:14px;'>
+        <div style='margin-top: 10px; background-color: #1e1e1e; color: #f8f8f2; padding: 10px; border-radius: 5px; font-family: monospace; font-size: 14px;'>
             • CSV files only<br>
             • UTF-8 encoding recommended
         </div>
